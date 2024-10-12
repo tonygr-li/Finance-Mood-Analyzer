@@ -20,7 +20,7 @@ This project demonstrates how to fine-tune a Cohere model for text classificatio
 1. Set up your Cohere API key:
     - Replace `"COHERE_API_KEY"` in `views.py` within the `sentiment_analysis` app with your actual Cohere API key.
 
-2. Add fine tuned model id in `views.py`:
+2. Add fine tuned model id in `views.py` (under finance_sentiment_analysis\classifier):
     ```python
     from django.http import JsonResponse
     import cohere
@@ -38,7 +38,7 @@ This project demonstrates how to fine-tune a Cohere model for text classificatio
             return JsonResponse({'sentiment': sentiment})
     ```
 
-3. Run the Django server:
+3. Run the Django server (in the finance_sentiment_analysis root directory):
     ```sh
     python manage.py runserver
     ```
